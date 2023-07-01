@@ -1,5 +1,7 @@
 :root {
-
+  --text-primary: rgb(255, 255, 255);
+  --text-secundary: #b3b3b3;
+  --bg-primary: #2c2c2c;
 }
 
 * {
@@ -14,3 +16,6 @@ body {
   overflow-x: hidden;
 }
 
+body {
+  background-color: var(--bg-primary);
+}
