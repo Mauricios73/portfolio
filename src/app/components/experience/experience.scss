@@ -15,6 +15,82 @@
         text-align: center;
      }
 
+     img {
+        filter: grayscale(100);
+     }
+
+     .experience-time {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 8px;
+     }
+
+     .experience-language {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+     }
+
+     .experience-unit {
+        width: 300px;
+        height: 40px;
+        border-radius: 24px;
+        border: 1px solid var(--text-secundary);
+        
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+
+        .experience-measure {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            border-radius: 24px;
+            height: 40px;
+            border: 1px solid linear-gradient((90deg, #582f9b 2.62%, #c140db 93.38%));
+            background: linear-gradient((90deg, #582f9b 2.62%, #c140db 93.38%));
+
+            color: var(--text-primary);
+            font-weight: 300;
+            text-align: center;
+            font-size: 12px;
+
+            &.measure-1 {
+                width: 10%;
+            }
+            &.measure-2 {
+                width: 20%;
+            }
+            &.measure-3 {
+                width: 30%;
+            }
+            &.measure-4 {
+                width: 40%;
+            }
+            &.measure-5 {
+                width: 50%;
+            }
+            &.measure-6 {
+                width: 60%;
+            }
+            &.measure-7 {
+                width: 70%;
+            }
+            &.measure-8 {
+                width: 80%;
+            }
+            &.measure-9 {
+                width: 90%;
+            }
+            &.measure-10 {
+                width: 100%;
+            }
+        }
+     }
+
 
     @media (min-width: 768px) {
         align-items:flex-start;

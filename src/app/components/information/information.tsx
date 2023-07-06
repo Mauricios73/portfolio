@@ -4,16 +4,15 @@ import "./information.scss"
 export function Info(){
     return(
         <div className="infos">
-        <SectionTitle text="Language"/>
+        <SectionTitle text="Linguas"/>
          <div className="language-info">
-            <span>En - Basic</span>
-            <span>Pt-Br - Native Speaker</span>
+            <span>En - Básico</span>
+            <span>Pt-Br - Nativo</span>
          </div>
-         <SectionTitle text="Education"/>
+         <SectionTitle text="Educação"/>
          <div className="educational-info">
           <span>👨‍🎓 </span>
-          <span>AMPLI, Ponta Grossa CIBERSEGURANÇA Conclusão Prevista: Julho 2024
-</span>
+          <span>AMPLI, Ponta Grossa CIBERSEGURANÇA Conclusão Prevista: Julho 2024</span>
          </div>
        </div>
     )
