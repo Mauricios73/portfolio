@@ -5,7 +5,7 @@ import Image from "next/image";
 export function Experience(){
     return(
         <div className="experience">
-         <SectionTitle text="Experience"/>
+         <SectionTitle text="Experiência"/>
          <p>Sou um estudante de Cibersegurança apaixonado por desenvolvimento Front-end, buscando uma oportunidade de estágio para aplicar meus conhecimentos e adquirir experiência prática no desenvolvimento web. </p>
 
             <div className="experience-time">
