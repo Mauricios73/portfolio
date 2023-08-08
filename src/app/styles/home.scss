@@ -38,10 +38,14 @@
                 align-items: center;
                 gap: 20px;
                 justify-content: center;
-            } 
+            }
+            .primary-btn:hover {
+                border: 2px solid linear-gradient((90deg, #582f9b 2.62%, #c140db 93.38%));
+                transform: scale(1.1);
+                box-shadow: 0 5px 15px rgba(0, 0, 0, 0.6);
+                opacity: 0.7;
+            }
     }
-
-
 }
 
 @media (min-width: 768px){
