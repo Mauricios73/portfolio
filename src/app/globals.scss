@@ -1,6 +1,6 @@
 :root {
   --text-primary: rgb(255, 255, 255);
-  --text-secundary: #b3b3b3;
+  --text-secundary: #ffffff;
   --bg-primary: #2c2c2c;
 }
 
@@ -18,4 +18,22 @@ body {
 
 body {
   background-color: var(--bg-primary);
+  position: relative;
+  width: 100%;
+  background: black;
+  opacity: 0.9;
 }
+
+body::after {
+  content: "";
+  background-image: url(../app/JavaScript.jpeg);
+  opacity: 0.28;
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+
+

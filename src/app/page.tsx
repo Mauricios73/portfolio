@@ -1,4 +1,4 @@
-import Image from 'next/image'
+// import Image from 'next/image'
 import { Experience } from './components/experience/experience'
 import { Header } from './components/header/header'
 import { Info } from './components/information/information'
@@ -11,16 +11,17 @@ export default function Home() {
     <main className='container'>
       <Header/>
       <Experience/>
-      <Info/>
+      <Info />
 
-         <div className="buttons">
-          <SocialBtns />
+      <div className="buttons">
+      <SocialBtns />
 
-            <a className='primary-btn' href='mailto:mauricioportela73@gmail.com'>
-              contato!
-              <EmailIcon/>
-            </a>
-         </div>
+        <a className='primary-btn' href='mailto:mauricioportela73@gmail.com'>
+          contato!
+          <EmailIcon/>
+        </a>
+      </div>
+            
     </main>
   )
 }

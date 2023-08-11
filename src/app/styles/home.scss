@@ -3,12 +3,13 @@
     display: grid;
     gap: 24px;
     justify-items: center;
-    grid-template-rows: 4, auto;
+    grid-template-rows: 5, auto;
     grid-template-areas: 
     "header"
     "btns"
     "experience"
-    "info";
+    "info"
+    "projetos";
 
     .buttons {
         display: flex;
