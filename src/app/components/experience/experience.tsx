@@ -2,11 +2,16 @@ import { SectionTitle } from "../sectionTitle/section-title";
 import "./experience.scss"
 import Image from "next/image";
 
+
 export function Experience(){
     return(
         <div className="experience">
          <SectionTitle text="Experiência"/>
-         <p>Sou um estudante de Cibersegurança apaixonado por desenvolvimento Front-end, buscando uma oportunidade de estágio para aplicar meus conhecimentos e adquirir experiência prática no desenvolvimento web. </p>
+         <p>Sou estudante de CiberSegurança e tenho um
+            muito interesse na área de TI, busco um estágio
+            que me proporcione experiência prática e a
+            oportunidade de aplicar meus conhecimentos em
+            ambientes reais. </p>
 
             <div className="experience-time">
                 <div className="experience-language">
@@ -48,8 +53,8 @@ export function Experience(){
                         priority
                     />
                     <div className="experience-unit">
-                        <div className="experience-measure measure-2">
-                            <span> 2/10</span>
+                        <div className="experience-measure measure-3">
+                            <span> 3/10</span>
                         </div>
                     </div>
                 </div>
@@ -63,8 +68,8 @@ export function Experience(){
                         priority
                     />
                     <div className="experience-unit">
-                        <div className="experience-measure measure-2">
-                            <span>2/10</span>     
+                        <div className="experience-measure measure-3">
+                            <span>3/10</span>     
                         </div>
                     </div>
                 </div>

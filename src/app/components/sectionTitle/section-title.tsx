@@ -1,4 +1,3 @@
-// import { text } from "stream/consumers"
 import "./section-title.scss"
 
 interface SectionTitleProps {

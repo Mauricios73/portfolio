@@ -21,7 +21,6 @@ export default function Home() {
           <EmailIcon/>
         </a>
       </div>
-            
     </main>
   )
 }

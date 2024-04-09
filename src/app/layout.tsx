@@ -6,8 +6,8 @@ weight: ['300', '400', '500', '600']
 })
 
 export const metadata = {
-  title: 'Mauricio Portela',
-  description: 'Mauricio Portela is a FrontEnd Developer.',
+  title: 'Portifólio',
+  description: 'Mauricio Portela, FrontEnd Developer.',
 }
 
 export default function RootLayout({
