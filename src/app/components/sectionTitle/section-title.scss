@@ -1,15 +1,1 @@
-.section-title {
-    font-weight: 500;
-    font-size: 22px;
-    line-height: 36px;
-    text-align: center;
-    color: var(--text-primary);
-
-    // margin-bottom: 20px;
-
-    @media (min-width: 768px){
-    font-size:22px;
-    line-height: 28px;
-    text-align: start;
-    }
-}
+.section-title{font-weight:600;font-size:14px;line-height:1.4;text-align:left;color:var(--text);letter-spacing:.08em;text-transform:uppercase;margin:0 0 14px}@media(min-width:768px){.section-title{font-size:14px}}
