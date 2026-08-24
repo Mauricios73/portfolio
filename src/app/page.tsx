@@ -1,4 +1,3 @@
-import { Experience } from './components/experience/experience'
 import { Info } from './components/information/information'
 import { Projects } from './components/projects/projects'
 import { Architecture } from './components/architecture/architecture'
@@ -31,7 +30,6 @@ export default function Home() {
         </div>
       </section>
 
-      <Experience />
       <Projects />
       <Architecture />
       <Roadmap />
