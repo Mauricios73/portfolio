@@ -1,5 +1,4 @@
 import { Experience } from './components/experience/experience'
-import { Header } from './components/header/header'
 import { Info } from './components/information/information'
 import { Projects } from './components/projects/projects'
 import { Architecture } from './components/architecture/architecture'
@@ -11,9 +10,9 @@ import './styles/home.scss'
 export default function Home() {
   return (
     <main className="container">
-      <nav className="site-nav">
-        <a href="#inicio">MP<span>.</span></a>
-        <div>
+      <nav className="site-nav" aria-label="Navegação principal">
+        <a className="brand" href="#inicio" aria-label="Mauricio Portela — início">MP<span>.</span></a>
+        <div className="site-nav__links">
           <a href="#sobre">Sobre</a>
           <a href="#projetos">Projetos</a>
           <a href="#arquitetura">Arquitetura</a>
@@ -27,8 +26,8 @@ export default function Home() {
         <h1>Construindo sistemas, explorando redes e aprendendo segurança.</h1>
         <p>Sou Mauricio Portela. Meu foco atual está em segurança cibernética, redes Wi-Fi e sistemas embarcados. Transformo ideias em projetos reais com ESP32, C/C++, software e tecnologias web.</p>
         <div className="hero-links">
-          <a className="primary-btn" href="#projetos">Ver projetos ↓</a>
-          <a className="text-btn" href="https://github.com/Mauricios73" target="_blank" rel="noreferrer">GitHub ↗</a>
+          <a className="primary-btn" href="#projetos">Ver projetos <span aria-hidden="true">↓</span></a>
+          <a className="text-btn" href="https://github.com/Mauricios73" target="_blank" rel="noreferrer">GitHub <span aria-hidden="true">↗</span></a>
         </div>
       </section>
 
@@ -41,7 +40,7 @@ export default function Home() {
       <section className="contact-panel" id="contato">
         <span className="eyebrow">CONTATO</span>
         <h2>Vamos construir algo?</h2>
-        <p>Estou usando este espaço para documentar projetos, experimentos e minha evolução técnica.</p>
+        <p>Este espaço documenta meus projetos, experimentos e evolução técnica.</p>
         <div className="buttons">
           <SocialBtns />
           <a className="primary-btn" href="mailto:mauricioportela73@gmail.com">Entrar em contato <EmailIcon /></a>
