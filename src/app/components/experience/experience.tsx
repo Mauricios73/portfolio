@@ -1,81 +1,28 @@
-import { SectionTitle } from "../sectionTitle/section-title";
 import "./experience.scss"
-import Image from "next/image";
+import { SectionTitle } from "../sectionTitle/section-title"
 
+const technologies = [
+  ["C/C++", "Embedded"],
+  ["ESP32", "Hardware"],
+  ["Wi-Fi", "Networking"],
+  ["TypeScript", "Web"],
+  ["React / Next.js", "Web"],
+  ["Git / GitHub", "Tooling"],
+]
 
 export function Experience(){
-    return(
-        <div className="experience">
-         <SectionTitle text="Experiência"/>
-         <p>Sou estudante de CiberSegurança e tenho um
-            muito interesse na área de TI, busco um estágio
-            que me proporcione experiência prática e a
-            oportunidade de aplicar meus conhecimentos em
-            ambientes reais. </p>
-
-            <div className="experience-time">
-                <div className="experience-language">
-                    <Image
-                        src="/Meu projeto.png"
-                        alt="Python Logo"
-                        width={45}
-                        height={35}
-                        priority
-                    />
-                    <div className="experience-unit">
-                        <div className="experience-measure measure-6">
-                            <span>6/10</span>     
-                        </div>
-                    </div>
-                </div>
-
-                <div className="experience-language">
-                    <Image
-                        src="/js.png"
-                        alt="JavaScript Logo"
-                        width={40}
-                        height={40}
-                        priority
-                    />
-                    <div className="experience-unit">
-                        <div className="experience-measure measure-4">
-                            <span>4/10</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div className="experience-language">
-                    <Image
-                        src="/react.png"
-                        alt="React Logo"
-                        width={40}
-                        height={40}
-                        priority
-                    />
-                    <div className="experience-unit">
-                        <div className="experience-measure measure-3">
-                            <span> 3/10</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div className="experience-language">
-                    <Image
-                        src="/ts.png"
-                        alt="TypeScript Logo"
-                        width={40}
-                        height={40}
-                        priority
-                    />
-                    <div className="experience-unit">
-                        <div className="experience-measure measure-3">
-                            <span>3/10</span>     
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-
-    )
+  return(
+    <section className="experience" id="sobre">
+      <SectionTitle text="Sobre / Stack"/>
+      <p>Tenho interesse em segurança cibernética e desenvolvimento de sistemas. Atualmente concentro meus estudos e projetos em redes, Wi-Fi, ESP32 e desenvolvimento de software.</p>
+      <div className="experience-time">
+        {technologies.map(([name, area]) => (
+          <div className="experience-language" key={name}>
+            <strong>{name}</strong>
+            <span>{area}</span>
+          </div>
+        ))}
+      </div>
+    </section>
+  )
 }
